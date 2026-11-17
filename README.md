@@ -4,7 +4,7 @@
 
 Este proyecto realiza un análisis exploratorio y de calidad de datos para ConnectaTel, una empresa de telecomunicaciones en Latinoamérica.
 
-El objetivo principal es comprender el comportamiento de los clientes mediante el análisis de sus planes contratados, características demográficas y patrones de uso de servicios de telefonía y mensajería. A partir de este análisis se busca identificar oportunidades para mejorar la retención de clientes, detectar anomalías en los datos y generar información útil para la toma de decisiones del negocio. 【1-ee31a6】
+El objetivo principal es comprender el comportamiento de los clientes mediante el análisis de sus planes contratados, características demográficas y patrones de uso de servicios de telefonía y mensajería. A partir de este análisis se busca identificar oportunidades para mejorar la retención de clientes, detectar anomalías en los datos y generar información útil para la toma de decisiones del negocio.
 
 ---
 
@@ -17,7 +17,7 @@ El objetivo principal es comprender el comportamiento de los clientes mediante e
 - Analizar el comportamiento de uso de los clientes.
 - Construir métricas agregadas por usuario.
 - Generar estadísticas descriptivas sobre consumo y características demográficas.
-- Visualizar distribuciones y detectar posibles patrones de comportamiento. 【1-ee31a6】
+- Visualizar distribuciones y detectar posibles patrones de comportamiento.
 
 ---
 
@@ -59,8 +59,7 @@ Variables principales:
 - Duración de llamadas
 - Longitud de mensajes
 
-Todos los datos corresponden a registros disponibles hasta el año 2024. 【1-ee31a6】
-
+Todos los datos corresponden a registros disponibles hasta el año 2024.
 ---
 
 ## Etapas del análisis
@@ -70,7 +69,7 @@ Todos los datos corresponden a registros disponibles hasta el año 2024. 【1-ee
 - Importación de librerías (`pandas`, `numpy`, `matplotlib`, `seaborn`).
 - Carga de los datasets.
 - Revisión de dimensiones, columnas y tipos de datos.
-- Exploración preliminar mediante `.head()` e `.info()`. 【1-ee31a6】
+- Exploración preliminar mediante `.head()` e `.info()`.
 
 ### 2. Evaluación de calidad de datos
 
@@ -78,7 +77,7 @@ Todos los datos corresponden a registros disponibles hasta el año 2024. 【1-ee
 - Cálculo de proporciones de datos faltantes.
 - Detección de sentinels y valores inválidos.
 - Revisión de estadísticas descriptivas.
-- Exploración de variables categóricas y numéricas. 【1-ee31a6】
+- Exploración de variables categóricas y numéricas.
 
 ### 3. Limpieza de datos
 
@@ -88,7 +87,7 @@ Se realizaron las siguientes correcciones:
 - Conversión de `"?"` a valores nulos en la variable ciudad.
 - Conversión de columnas de fecha al formato datetime.
 - Identificación y eliminación lógica de fechas fuera del rango esperado.
-- Validación del comportamiento de los valores faltantes en variables de uso. 【1-ee31a6】
+- Validación del comportamiento de los valores faltantes en variables de uso.
 
 ### 4. Construcción de métricas por usuario
 
@@ -98,7 +97,7 @@ Se generaron indicadores agregados por cliente:
 - Cantidad total de llamadas realizadas.
 - Total de minutos consumidos en llamadas.
 
-Posteriormente estas métricas fueron integradas con la información de clientes. 【1-ee31a6】
+Posteriormente estas métricas fueron integradas con la información de clientes.
 
 ### 5. Estadística descriptiva
 
@@ -108,7 +107,7 @@ Se analizaron:
 - Cantidad de mensajes.
 - Cantidad de llamadas.
 - Minutos consumidos.
-- Distribución de usuarios por tipo de plan. 【1-ee31a6】
+- Distribución de usuarios por tipo de plan.
 
 ### 6. Visualización de datos
 
@@ -120,7 +119,7 @@ Se construyeron gráficos para:
 - Distribución de minutos consumidos.
 - Comparaciones entre planes Básico y Premium.
 
-Estas visualizaciones permiten identificar patrones de comportamiento y posibles valores atípicos. 【1-ee31a6】
+Estas visualizaciones permiten identificar patrones de comportamiento y posibles valores atípicos.
 
 ---
 
@@ -205,7 +204,7 @@ Para reproducir completamente el análisis:
 - Se detectaron registros con fechas fuera del rango esperado.
 - Se comprobó que algunos valores nulos dependen del tipo de evento registrado y forman parte del comportamiento esperado de los datos.
 - Se construyeron métricas agregadas que permiten analizar el consumo de los usuarios de manera individual.
-- Se generó una base limpia y estructurada para análisis avanzados de segmentación, churn y comportamiento de clientes. 【1-ee31a6】
+- Se generó una base limpia y estructurada para análisis avanzados de segmentación, churn y comportamiento de clientes.
 
 ---
 
